@@ -1,0 +1,102 @@
+* {
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+ 
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    background: radial-gradient( #1b2735 10%, #090a0f 80%);
+}
+
+::-webkit-scrollbar-track {
+    background: #071952;
+    border-radius: 100vw;
+    margin-block: .5em;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #363062;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2D3250;
+    opacity: 50%;
+}
+
+
+
+html {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 10%, #090a0f 80%);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+
+div {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-right: 1px solid;
+    border-left:1px solid ;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FF0060; /* First neon color */
+    text-shadow: 3px 3px 5px #FF0060;
+    z-index: -1;
+
+  }
+  
+  h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F6FA70; /* Second neon color */
+    text-shadow: 6px 6px 5px #F6FA70;
+    z-index: -2;
+  }
+  
+  h1 span {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  ul li a {
+    font-weight: bold;
+    color: blue;
+    font-size: 1.25rem;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transition effect */
+  }
+  
+  ul li a:hover {
+    font-size: 1.4rem;
+    text-decoration: underline;
+  }
+  
+
+  body {
+    padding-bottom: 20px;
+  }
